@@ -16,4 +16,19 @@ class NumberTriviaModel extends NumberTrivia {
       'number': number,
     };
   }
+
+  @override
+  bool operator ==(Object other) {
+    if (identical(this, other)) return true;
+
+    return other is NumberTriviaModel &&
+        other.number == number &&
+        other.text == text;
+  }
+
+  @override
+  int get hashCode => number.hashCode ^ text.hashCode;
+
+  @override
+  String toString() => 'NumberTriviaModel(number: $number, text: $text)';
 }

@@ -16,3 +16,7 @@ class MyApp extends StatelessWidget {
     );
   }
 }
+
+// http://numberapi.com/24?json
+
+// http://numberapi.com/random?json
